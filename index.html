@@ -8,13 +8,16 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600&family=Nunito+Sans:opsz,wght@300;600&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
     <title>Plants</title>
 </head>
 
 <body>
     <div class="container">
-        <header class="card" style="height: 3.rem;">
+
+        <header class="card" style="height: 3.rem; margin-bottom: 2%;">
             <div class="card-body bg-color" style="
             display: flex;
             width: 30%;
@@ -26,7 +29,78 @@
             </div>
         </header>
 
+        <div class="card" style="margin-bottom: 2%;">
+            <div class="card-body">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"> <a class="nav-link active" href="./index.html">Первая страница</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="./shop.html">Магазин</a></li>
+                </ul>
+            </div>
+
+
+            <div class="card-body"
+                style="display: flex; flex-direction: column; align-items: center; padding: 2%;">
+                <h5 class='card-title text-center' id='top_of _page'
+                    style="width: 80%; font-family: 'Nunito Sans', sans-serif; font-weight: 600; margin-bottom: 2%;">
+                    Приветствуем вас в магазине, где зелень становится
+                    частью вашего уюта!</h5>
+                <h5 class='card-title text-center' id='top_of _page'
+                    style="width: 80%; font-family: 'Nunito Sans', sans-serif; font-weight: 300; margin-bottom: 2%;">
+                    Мы предлагаем вам коллекцию живых произведений искусства природы - декоративные
+                    растения, способные оживить каждый уголок вашего дома. Дайте своему пространству новый вдохновляющий
+                    облик с нашими зелеными друзьями, которые принесут свежесть и гармонию в вашу жизнь.</h5>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 50%;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/plant_1.jpg" class="d-block w-100" alt="plant_1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/plant_2.jpg" class="d-block w-100" alt="plant_2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/plant_3.jpg" class="d-block w-100" alt="plant_3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/plant_4.jpeg" class="d-block w-100" alt="plant_4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/plant_5.jpg" class="d-block w-100" alt="plant_5">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                @plants_factory
+            </div>
+        </div>
+
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
