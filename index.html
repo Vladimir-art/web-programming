@@ -9,30 +9,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600&family=Nunito+Sans:opsz,wght@300;600&family=Open+Sans:wght@300;400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,600&family=Open+Sans:wght@300;400&display=swap"
         rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
     <title>Plants</title>
 </head>
 
 <body>
     <div class="container">
 
-        <header class="card" style="height: 3.rem; margin-bottom: 2%;">
+        <header class="card" style="height: 3.rem; margin-bottom: 2%; border-color: var(--bs-green);">
             <div class="card-body bg-color" style="
             display: flex;
-            width: 30%;
-            justify-content: space-around;
+            width: 80%;
+            justify-content: start;
             align-items: center;
             font-family: 'Kalnia', serif;">
-                <img height="100px" src="./images/green_leaves_logo.jpg">
-                <h5 class="card-title" style="font-weight: 600; color: rgb(46, 139, 87);">PLANTS FACTORY</h5>
+                <img width="10%" src="./images/green_leaves_logo.jpg">
+                <h5 class="card-title" style="font-weight: 600; color: rgb(46, 139, 87); font-size: var(--bs-body-font-size); margin: 0;">PLANTS FACTORY</h5>
             </div>
         </header>
 
-        <div class="card" style="margin-bottom: 2%;">
+        <div class="card" style="margin-bottom: 2%; border-color: var(--bs-green);">
             <div class="card-body">
                 <ul class="nav nav-pills">
-                    <li class="nav-item"> <a class="nav-link active" href="./index.html">Первая страница</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="./index.html">Домашняя страница</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="./shop.html">Магазин</a></li>
                 </ul>
             </div>
@@ -85,9 +86,12 @@
 
         </div>
 
-        <div class="card">
+        <div class="card" style="border-color: var(--bs-green);">
             <div class="card-body">
-                @plants_factory
+                <a href="#" style="display: flex; text-decoration: none; align-items: center; width: 80%; justify-content: start;">
+                    <img width="3%" src="./images/inst.png" alt="Instagram">
+                    <h5 style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 200; color: black; font-size: var(--bs-body-font-size);">@plants_factory</h5>
+                </a>
             </div>
         </div>
 

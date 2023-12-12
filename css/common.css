@@ -1,0 +1,8 @@
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: var(--bs-teal)
+}
+
+.nav-link {
+    color: var(--bs-green)
+}
