@@ -73,13 +73,14 @@ async function getResponce() {
     let node_for_insert = document.getElementById("node_for_insert")
     for (key in content) {
         node_for_insert.innerHTML += `
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px; height: 280px; object-fit: cover;" class="align-self-center" src=${content[key].url}>
-        <h5 class="card-title">${content[key].title}</h5>
-        <p class="card-text">Цена ${content[key].price} €.</p>
-        <p class="card-text" >Заказать <input class="w-25" type="number" name="amount" value="0"></p>
-        </li>
-                `
+        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body rounded">
+            <img style="width: 180px; height: 280px; object-fit: cover;" class="align-self-center" src=${content[key].url}>
+            <div class="d-flex flex-column m-1 p-1 text-center justify-content-between">
+                <h5 class="card-title" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 600; height: 50px">${content[key].title}</h5>
+                <p class="card-text" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 300;">Цена <p class="card-text font-weight-bold" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 600;">${content[key].price} €.</p></p>
+                <p class="card-text" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 400;">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </div>
+        </li>`
     }
 }
 
