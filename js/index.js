@@ -78,7 +78,7 @@ async function getResponce() {
             <div class="d-flex flex-column m-1 p-1 text-center justify-content-between">
                 <h5 class="card-title" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 600; height: 50px">${content[key].title}</h5>
                 <p class="card-text" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 300;">Цена <p class="card-text font-weight-bold" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 600;">${content[key].price} €.</p></p>
-                <p class="card-text" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 400;">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                <p class="card-text" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 400;">Заказать <input class="w-25" type="number" value="0" min="0" key=${content[key].id} name=\'${content[key].title}\'></p>
             </div>
         </li>
                 `
