@@ -6,20 +6,23 @@ const sortAsc = () => {
     });
 
     const sortedProducts = products.sort((a, b) => a.title > b.title ? 1 : -1);
-    sortedProducts.forEach((product, i) => {product.element.style.order = i});
+    sortedProducts.forEach((product, i) => { product.element.style.order = i });
 }
 
-const sortDesc = () => {
-    const products = Array.from(document.querySelectorAll('.product'), function (product) {
-        return { name: product.dataset.name, element: product }
+const filterPrice = (range) => {
+    let flowerBusket = document.getElementById("node_for_insert");
+    const products = Array.from(flowerBusket.getElementsByTagName("li"), (flowerCard) => {
+        const price = flowerCard.querySelector(".price");
+        return { price: +price.textContent.replace(/\s€.$/, ""), element: flowerCard }
     });
-    console.log(products);
 
-    const sortedProducts = products.sort((a, b) => a.name < b.name);
-    console.log(sortedProducts)
-
-    sortedProducts.forEach((product, i) => product.element.style.order = i);
+    const sortedProducts = products.sort((a, b) => {
+        switch (range) {
+            case "low":
+                return a.price > b.price ? 1 : -1;
+            case "high":
+                return a.price < b.price ? 1 : -1;
+        }
+    });
+    sortedProducts.forEach((product, i) => { product.element.style.order = i });
 }
-
-//   document.querySelector('.sortByNameAsc').addEventListener('click', sortAsc);
-//   document.querySelector('.sortByNameDesc').addEventListener('click', sortDesc);

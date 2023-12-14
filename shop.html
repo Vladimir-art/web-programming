@@ -50,9 +50,12 @@
                         Фильтр
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item" type="button" onclick="">Сначала низкая цена</button>
-                        <button class="dropdown-item" type="button" onclick="">Сначала высокая цена</button>
-                        <button class="dropdown-item" type="button" name="ascFilter" onclick="sortAsc()">По алфавиту</button>
+                        <button class="dropdown-item" type="button" onclick="filterPrice('low')">Сначала низкая
+                            цена</button>
+                        <button class="dropdown-item" type="button" onclick="filterPrice('high')">Сначала высокая
+                            цена</button>
+                        <button class="dropdown-item" type="button" name="ascFilter" onclick="sortAsc()">По
+                            алфавиту</button>
                     </div>
                 </div>
             </div>
@@ -65,7 +68,8 @@
                     </ul>
                     <div class="d-flex flex-row flex-wrap justify-content-around">
                         <input class="btn btn-primary inp-success border-0" type="Submit" value="В корзину">
-                        <button type="button" class="btn btn-secondary"><a class="text-reset text-decoration-none" href="#top">Наверх</a></button>
+                        <button type="button" class="btn btn-secondary"><a class="text-reset text-decoration-none"
+                                href="#top">Наверх</a></button>
                     </div>
                 </form>
             </div>
