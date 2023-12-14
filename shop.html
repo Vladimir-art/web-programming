@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,6..12,400;600&family=Open+Sans:wght@300;400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,600&family=Open+Sans:wght@300;400&display=swap"
         rel="stylesheet">
     <link href="./css/common.css" rel="stylesheet">
     <title>Shop</title>
@@ -38,14 +38,32 @@
 
         <div class="card"
             style="margin-bottom: 2%; border-color: var(--bs-green); padding: 2%; box-sizing: border-box;">
+
+            <div class="card-body d-flex flex-row flex-wrap justify-content-between">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"> <a class="nav-link" href="./index.html">Домашняя страница</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="./shop.html">Магазин</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Фильтр
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Сначала низкая цена</button>
+                        <button class="dropdown-item" type="button">Сначала высокая цена</button>
+                        <button class="dropdown-item" type="button">По алфавиту</button>
+                    </div>
+                </div>
+            </div>
+
             <div class="card-body">
-                <h5 class='card-title text-center'>Магазин</h5>
-                <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <form action="#" id="UserEnter" name="UserEnter" target="_blank">
                     <input name="q" type="hidden" value="search">
                     <ul class="d-flex flex-row flex-wrap justify-content-around" id="node_for_insert">
 
                     </ul>
-                    <input class="btn btn-primary" type="Submit" value="В корзину">
+                    <input class="btn btn-primary inp-success border-0" type="Submit" value="В корзину">
                 </form>
             </div>
         </div>

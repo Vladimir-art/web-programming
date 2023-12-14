@@ -80,7 +80,8 @@ async function getResponce() {
                 <p class="card-text" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 300;">Цена <p class="card-text font-weight-bold" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 600;">${content[key].price} €.</p></p>
                 <p class="card-text" style="margin: 0; font-family: 'Nunito Sans', sans-serif; font-weight: 400;">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
             </div>
-        </li>`
+        </li>
+                `
     }
 }
 

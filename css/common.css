@@ -6,3 +6,11 @@
 .nav-link {
     color: var(--bs-green)
 }
+
+.inp-success {
+    background-color: var(--bs-teal)
+}
+
+.inp-success:hover {
+    background-color: var(--bs-green)
+}
